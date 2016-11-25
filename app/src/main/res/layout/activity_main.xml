@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="ui.MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right|bottom"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="30dp">
+
+            <ImageButton
+                android:id="@+id/btnFrente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_mov_fre"
+                android:rotation="0"/>
+
+            <ImageButton
+                android:id="@+id/btnRe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_mov_re"
+                android:layout_below="@+id/btnFrente"
+                android:layout_marginTop="40dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+            <ImageButton
+                android:id="@+id/btnEsquerda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_mov_esq" />
+
+            <ImageButton
+                android:id="@+id/btnDireita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_mov_dir"
+                android:layout_toEndOf="@+id/btnEsquerda"
+                android:layout_marginStart="40dp"
+                android:layout_toRightOf="@+id/btnEsquerda"
+                android:layout_marginLeft="40dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
